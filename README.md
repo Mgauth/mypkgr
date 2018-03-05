@@ -13,6 +13,9 @@ You can install mypkgr from github with:
 ``` r
 # install.packages("devtools")
 devtools::install_github("Mgauth/mypkgr")
+
+[![Travis-CI Build Status](https://travis-ci.org/Mgauth/mypkgr.svg?branch=master)](https://travis-ci.org/Mgauth/mypkgr)
+
 ```
 
 Example
