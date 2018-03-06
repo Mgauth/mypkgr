@@ -57,5 +57,25 @@ mvnpdf <- function(x, mean =  rep(0, nrow(x)),
     y <- exp(y)
   }
 
-  return(list(x=x, y=y))
+  res <- list(x=x, y=y)
+  class(res) <- "mvnpdf"
+  return(res)
+
+}
+
+#' Plot
+#'
+#' @param x objet mvnpdf
+#' @param ...
+#'
+#' @return plot
+#' @export
+#' @importFrom graphics plot
+#' @examples
+#'
+#'
+#'
+
+plot.mvnpdf <- function(x, ...){
+  graphics::plot(x$x,x$y,type="l", ...)
 }
